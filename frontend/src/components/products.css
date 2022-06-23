@@ -1,0 +1,66 @@
+.Product_card{
+    box-shadow: 10px 10px 10px pink;
+}
+.Product_card:hover{
+    box-shadow: 5px 5px 5px darkorchid;
+}
+.review_container {
+    height: 500px;
+}
+#product_image_card{
+    max-width: 300px;
+    max-height: 300px;
+}
+.review_carousel {
+    height: 500px;
+    margin-bottom: 2px;
+}
+.product_button {
+    color: black;
+    background-color: transparent;
+    border: none
+;
+}
+.product_button:hover {
+    border: 1px solid darkgrey;
+    box-shadow: 4x 4px 2px darkgrey;
+    background-color: blue;
+}
+
+.card_money {
+    justify-content: center;
+    color: green;
+    
+}
+
+/* ABOUT  */
+
+.about_image_div {
+    box-shadow: 5px 5px 5px black;
+    margin: 5px;
+    height: 400px;
+    width: 400px;
+    animation-name: switchSpots;
+    animation-duration: 2s;
+}
+.about_image_div:hover {
+    box-shadow: 5px 5px 5px purple;
+    margin: 5px;
+    height: 400px;
+    width: 400px;
+
+}
+@keyframes switchSpots {
+    0% {
+       transform: translateY(0);
+    }
+    100% {
+       transform: translateY(50px);
+    }
+}
+.about_image_div_2 {
+    box-shadow: 5px 5px 5px black;
+    margin: 5px;
+    height: 400px;
+    width: 400px;
+}

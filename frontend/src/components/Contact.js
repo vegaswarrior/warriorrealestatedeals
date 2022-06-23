@@ -1,14 +1,14 @@
 import React from 'react'
 import { Container, Row, Col, Form,  } from 'react-bootstrap'
 import '../screens/homescreen.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import ContactImage from '../components/images/conact2.jpeg'
 
 function Contact() {
   return (
     <>
-        <Container fluid className='contact_background_image'>
-       {/* <div className='contact_background_image'>
-         
-       </div> */}
+    <Container fluid className='contact_container'>
+       <img src={ContactImage} className="contact_background_image"></img>
     </Container>
     
     <Container className='form_container'>
@@ -26,7 +26,7 @@ function Contact() {
         </Col>
         <Col>
         <div className='right_side_div'>
-           <h1>Contact Me</h1>
+          
            <Form className='text-center'>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
               <Form.Label>name</Form.Label>

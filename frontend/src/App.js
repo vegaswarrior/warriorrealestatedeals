@@ -23,6 +23,7 @@ import Collections from './components/Collections'
 import Contact from './components/Contact'
 
 
+
 const App = () => {
 
 
@@ -44,7 +45,7 @@ const App = () => {
           <Route path='/admin/user/:id/edit' component={UserEditScreen} />
           <Route path='/story' component={Story} />
           <Route path='/collections' component={Collections} />
-          <Route path='/contact' component={Contact} />
+          
           <Route
             path='/admin/productlist'
             component={ProductListScreen}
@@ -65,6 +66,7 @@ const App = () => {
             exact
           />
            </Container>
+          <Route path='/contact' component={Contact} />
           <Route path='/' component={HomeScreen} exact />
         
        

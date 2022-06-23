@@ -3,6 +3,7 @@ import {Link} from "react-router-dom";
 import {Card, CardGroup} from "react-bootstrap";
 import Rating from "./Rating";
 import ProductCarousel from "./ProductCarousel";
+import "./products.css"
 
 const Product = ({product}) => {
 	return (

@@ -12,9 +12,9 @@ const Meta = ({ title, description, keywords }) => {
 }
 
 Meta.defaultProps = {
-  title: 'Black Cat Macrame',
-  description: 'Hand Craftred Micro Macrame',
-  keywords: 'Macrame, Micro Macrame, Wall Art, Custom Hand Made',
+  title: 'Warrior Investors',
+  description: 'A Place where Wholesalers and Cash Buyers meet!!!',
+  keywords: 'Wholesaler, Cash Buyer, Deals, ROI, ',
 }
 
 export default Meta

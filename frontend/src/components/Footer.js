@@ -4,7 +4,7 @@ import { Container, Row, Col } from 'react-bootstrap'
 const Footer = () => {
   return (
     <footer>
-      <Container fluid className='footer_container mt-5'> 
+      <Container fluid className='footer_container'> 
         <Row>
           <Col className='text-center py-3 text-info'>
             <ul>

@@ -7,7 +7,7 @@ import SearchBox from "./SearchBox";
 import {logout} from "../actions/userActions";
 import "../screens/homescreen.css";
 import Avatar from "./Avatar";
-import Logo from './blackcatlogo2.jpg'
+// import Logo from './blackcatlogo2.jpg'
 
 const Header = () => {
 	const dispatch = useDispatch();
@@ -28,31 +28,32 @@ const Header = () => {
 				collapseOnSelect
 			>
 				<Container>
-					{/* <LinkContainer to='/'>
-            <Navbar.Brand>Black Cat Macrame</Navbar.Brand>
-          </LinkContainer> */}
+
 					<Navbar.Toggle aria-controls="basic-navbar-nav" />
 					<Navbar.Collapse id="basic-navbar-nav">
-					    <LinkContainer to="/">
+					    {/* <LinkContainer to="/">
 							<Navbar.Brand className="jumboH2 text-info"><img className="logo1" src={Logo}></img></Navbar.Brand>
-						</LinkContainer>
+						</LinkContainer> */}
 						{/* <Route render={({ history }) => <SearchBox history={history} />} /> */}
 						<LinkContainer to="/">
-							<Navbar.Brand className="jumboH2 text-info">Home</Navbar.Brand>
+							<Navbar.Brand className="jumboH2 text-white">Home</Navbar.Brand>
 						</LinkContainer>
-						<LinkContainer to="/story">
-							<Navbar.Brand className="jumboH2 text-info">My Story</Navbar.Brand>
+						{/* <LinkContainer to="/story">
+							<Navbar.Brand className="jumboH2 text-white">My Story</Navbar.Brand>
+						</LinkContainer> */}
+				           <LinkContainer to="/pricing">
+							<Navbar.Brand className="jumboH2 text-white">Pricing</Navbar.Brand>
 						</LinkContainer>
 						<LinkContainer to="/collections">
-							<Navbar.Brand className="jumboH2 text-info">Collections</Navbar.Brand>
-						</LinkContainer>
+							<Navbar.Brand className="jumboH2 text-white">Collections</Navbar.Brand>
+						</LinkContainer>		
 						<LinkContainer to="/contact">
-							<Navbar.Brand className="jumboH2 text-info">Contact Me</Navbar.Brand>
+							<Navbar.Brand className="jumboH2 text-white">Contact Me</Navbar.Brand>
 						</LinkContainer>
 						<Nav className="ml-auto">
 							<LinkContainer to="/cart">
 								<Nav.Link>
-									<i className="fas fa-shopping-cart text-info"></i> Cart
+									<i className="fas fa-shopping-cart text-white"></i> Cart
 								</Nav.Link>
 							</LinkContainer>
 							{userInfo ? (

@@ -18,7 +18,9 @@ import UserEditScreen from './screens/UserEditScreen'
 import ProductListScreen from './screens/ProductListScreen'
 import ProductEditScreen from './screens/ProductEditScreen'
 import OrderListScreen from './screens/OrderListScreen'
-import Story from './components/Story'
+import Pricing from './components/Pricing'
+import Buyer from './components/Buyer'
+import Seller from './components/Seller'
 import Collections from './components/Collections'
 import Contact from './components/Contact'
 
@@ -43,7 +45,9 @@ const App = () => {
           <Route path='/cart/:id?' component={CartScreen} />
           <Route path='/admin/userlist' component={UserListScreen} />
           <Route path='/admin/user/:id/edit' component={UserEditScreen} />
-          <Route path='/story' component={Story} />
+          <Route path='/buyer' component={Buyer} />
+          <Route path='/seller' component={Seller} />
+          <Route path='/pricing' component={Pricing} />
           <Route path='/collections' component={Collections} />
           
           <Route

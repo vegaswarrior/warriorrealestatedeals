@@ -1,15 +1,12 @@
 import React from 'react'
 import "./pricing.css";
 
-function Contact() {
+const Pricing = () => {
   return (
-    <>
     <section>
-      <div class="curve"></div>
+       <div class="curve"></div>
     </section>
-    </>
-
   )
 }
 
-export default Contact
+export default Pricing

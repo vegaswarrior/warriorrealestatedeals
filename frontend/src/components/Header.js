@@ -21,14 +21,8 @@ const Header = () => {
 
 	return (
 		<header>
-			<Navbar
-				className="navbar1 d-flex justify-content-center"
-				variant="dark"
-				expand="lg"
-				collapseOnSelect
-			>
+			<Navbar className="navbar1 d-flex justify-content-center" variant="dark" expand="lg" collapseOnSelect>
 				<Container>
-
 					<Navbar.Toggle aria-controls="basic-navbar-nav" />
 					<Navbar.Collapse id="basic-navbar-nav">
 					    {/* <LinkContainer to="/">
@@ -36,26 +30,24 @@ const Header = () => {
 						</LinkContainer> */}
 						{/* <Route render={({ history }) => <SearchBox history={history} />} /> */}
 						<LinkContainer to="/">
-							<Navbar.Brand className="jumboH2 text-white">Home</Navbar.Brand>
+							<Navbar.Brand className="text-white">Home</Navbar.Brand>
 						</LinkContainer>
-						{/* <LinkContainer to="/story">
-							<Navbar.Brand className="jumboH2 text-white">My Story</Navbar.Brand>
+						<LinkContainer to="/wholeseller">
+							<Navbar.Brand className=" text-white">Wholeseller</Navbar.Brand>
+						</LinkContainer>
+				           <LinkContainer to="/buyer">
+							<Navbar.Brand className="text-white">Buyer</Navbar.Brand>
+						</LinkContainer>
+		
+						{/* <LinkContainer to="/contact">
+							<Navbar.Brand className=" text-white">Contact Us</Navbar.Brand>
 						</LinkContainer> */}
-				           <LinkContainer to="/pricing">
-							<Navbar.Brand className="jumboH2 text-white">Pricing</Navbar.Brand>
-						</LinkContainer>
-						<LinkContainer to="/collections">
-							<Navbar.Brand className="jumboH2 text-white">Collections</Navbar.Brand>
-						</LinkContainer>		
-						<LinkContainer to="/contact">
-							<Navbar.Brand className="jumboH2 text-white">Contact Me</Navbar.Brand>
-						</LinkContainer>
 						<Nav className="ml-auto">
-							<LinkContainer to="/cart">
+							{/* <LinkContainer to="/cart">
 								<Nav.Link>
 									<i className="fas fa-shopping-cart text-white"></i> Cart
 								</Nav.Link>
-							</LinkContainer>
+							</LinkContainer> */}
 							{userInfo ? (
 								<div className="d-lg-flex justify-content-start ms-lg-5">
 									<Avatar size="40px" url={userInfo.avatar} className="" />

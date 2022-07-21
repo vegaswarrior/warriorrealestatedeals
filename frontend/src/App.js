@@ -18,7 +18,7 @@ import UserEditScreen from './screens/UserEditScreen'
 import ProductListScreen from './screens/ProductListScreen'
 import ProductEditScreen from './screens/ProductEditScreen'
 import OrderListScreen from './screens/OrderListScreen'
-import Pricing from './components/Pricing'
+import Wholeseller from './components/Wholeseller'
 import Buyer from './components/Buyer'
 import Seller from './components/Seller'
 import Collections from './components/Collections'
@@ -45,9 +45,7 @@ const App = () => {
           <Route path='/cart/:id?' component={CartScreen} />
           <Route path='/admin/userlist' component={UserListScreen} />
           <Route path='/admin/user/:id/edit' component={UserEditScreen} />
-          <Route path='/buyer' component={Buyer} />
-          <Route path='/seller' component={Seller} />
-          <Route path='/pricing' component={Pricing} />
+          <Route path='/wholeseller' component={Wholeseller} />
           <Route path='/collections' component={Collections} />
           
           <Route
@@ -70,6 +68,8 @@ const App = () => {
             exact
           />
            </Container>
+          <Route path='/buyer' component={Buyer} />
+          <Route path='/seller' component={Seller} />
           <Route path='/contact' component={Contact} />
           <Route path='/' component={HomeScreen} exact />
         

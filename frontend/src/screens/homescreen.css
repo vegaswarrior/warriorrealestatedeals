@@ -1,42 +1,49 @@
-@import url('https://fonts.googleapis.com/css2?family=Birthstone&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Birthstone&family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner&display=swap');
 
 .navbar1 {
- background-color: blue;
+ background-color: darkgrey;
+ font-family: 'Edu QLD Beginner', cursive;
+ font-size: 14px;
 }
-.main {
+.first_container{
   display: flex;
-  /* background-color: darkblue; */
-  flex-direction: column-reverse;
-  height: 800px;
-  /* background-image: url("../components/images/flip2.jpg"); */
-  /* background-color: #cccccc;  */
-  background-position: right; 
-  background-repeat: no-repeat; 
+  flex-direction: column;
+  justify-content: center;
+  height: 600px;
+  background-image: linear-gradient(to right, rgba(173, 216, 230, 0.548), rgba(0, 0, 139, 0.795), rgba(173, 216, 230, 0.795)), 
+  url("./houseSold.jpeg");
   background-size: cover;
-  }
- 
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.warrior_h1 {
+  font-family: 'Cormorant SC', serif;
+  color: #fff;;
+}
+.first_h1 {
+  font-family: 'Arima', cursive;
+  color: #000;
+}
+.left_col{
+  height: 500px;
+  border-right: 1px solid white; 
+}
+.right_col{
+  height: 500px;
+}
+.second_h1 {
+  font-family: 'Abril Fatface', cursive;
+  animation-name: moveInleft;
+  animation-duration: 2s;
 
-  
-  .logo1 {
+}
+.logo1 {
     height: 50px;
   }
-  .jumboH1 {
-    font-family: 'Birthstone', cursive;
-    color: #000;
-    font-size: 75px;
-  
-    animation-name: moveInleft;
-    animation-duration: 2s;
-  }
-  .jumboH2 {
-    font-family: 'Birthstone', cursive;
-    font-size: 35px;
-    animation-name: moveInRight;
-    animation-duration: 2s;
-  }
   /* FIRST BUTTON  */
-  #first_button{
+#first_button{
     align-self: center;
     justify-self: center;
     background-color: red;
@@ -47,10 +54,10 @@
     animation-name: moveInUp;
     animation-duration: 2s;
   }
-  #second_button{
+#second_button{
     align-self: center;
     justify-self: center;
-    background-color: green;
+    background-color: red;
     width: 200px;
     color: white;
     box-shadow: 5px 5px 5px black;
@@ -58,32 +65,12 @@
     animation-name: moveInUp;
     animation-duration: 2s;
   }
-  #first_button:hover{
-    align-self: center;
-    justify-self: center;
-    width: 190px;
-    display: block;
-    background-color: green;
-    color: white;
-    box-shadow: 5px 5px 5px rgb(34, 7, 36);
-    border: #f172eb;
-    transform: translateY(-3px);
-  }
-  #first_button:active{
+
+#first_button:active{
     transform: translateY(-1px);
   }
-  #second_button:hover{
-    align-self: center;
-    justify-self: center;
-    width: 190px;
-  
-    background-color: red;
-    color: white;
-    box-shadow: 5px 5px 5px rgb(34, 7, 36);
-    border: #f172eb;
-    transform: translateY(-3px);
-  }
-  #secons_button:active{
+
+#second_button:active{
     transform: translateY(-1px);
   }
 
@@ -128,8 +115,6 @@
    transform: translateY(0);
    }
 }
-
-
 
   .cat_col {
     height: 300px;
@@ -260,11 +245,15 @@
       margin-bottom: 10%;
     }
   }
-  .first_row {
-    display: flex;
-    justify-self: center;
-  }
-  .left_col {
-    border-right: 2px solid black;
-    justify-content: center;
-  }
+.buyer_container {
+  background-image: url();
+}
+.seller_container {
+  
+  width: 100%;
+  height: 1000px;
+  background-image: url("./foresaleHome.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}

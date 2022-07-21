@@ -31,7 +31,9 @@ Also, when importing a file (not a package), be sure to add .js at the end or yo
 You can also install and setup Babel if you would like
 
 ### Env Variables
+We host our images on Cloudinary, so you must have API keys for your images to show up...
 
+There are two virsons of this App, With Stripe or with Paypal... In this Web App, PayPal is Commenited out in the Order.js file... 
 Create a .env file in then root and add the following
 
 ```
